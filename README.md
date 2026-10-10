@@ -1,16 +1,93 @@
-# React + Vite
+# Ambulance Management System — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## About the Project
 
-Currently, two official plugins are available:
+The Ambulance Management System is a Java Full Stack web application designed to simplify emergency ambulance services. The frontend is developed using React.js and Vite, providing a user-friendly interface for patients, drivers, and administrators. Patients can register, log in, submit emergency requests, and track their request status. Administrators can manage emergency requests and assign available ambulances and drivers, while drivers can view their assigned requests and mark them as completed.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies Used
 
-## React Compiler
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Vite
+- Axios
+- React Router
+- Git and GitHub
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the Oxlint configuration
+- User registration and login
+- Patient dashboard
+- Emergency request creation
+- Emergency request status tracking
+- Driver dashboard
+- Admin dashboard
+- Ambulance and driver assignment
+- Responsive user interface
+- Integration with Spring Boot REST APIs
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Prerequisites
+
+- Node.js
+- npm
+- Ambulance Management System backend
+
+## Installation
+
+Clone the frontend repository:
+
+```bash
+git clone https://github.com/Aravind6082/ambulance-management-system_frontend.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd ambulance-management-system_frontend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+## Run the Application
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal. The default Vite address is usually:
+
+http://localhost:5173
+
+## Backend Integration
+
+The frontend communicates with the Spring Boot backend through REST APIs. Ensure the backend is running at `http://localhost:8080` and that the frontend API configuration points to the correct backend address.
+
+## Application Workflow
+
+1. Patients register and log in.
+2. Patients create emergency ambulance requests.
+3. Administrators view requests and assign available ambulances and drivers.
+4. Drivers view assigned requests and complete them.
+5. Request status and resource availability are updated.
+
+## Future Enhancements
+
+- Real-time ambulance GPS tracking
+- Interactive maps and route optimization
+- Emergency notifications
+- Enhanced security and role-based access control
+
+## Author
+
+**Aravind Reddy**
+
+## Repository
+
+[Ambulance Management System Frontend](https://github.com/Aravind6082/ambulance-management-system_frontend)
