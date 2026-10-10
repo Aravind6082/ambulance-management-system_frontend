@@ -1,11 +1,9 @@
 # Ambulance Management System — Frontend
 
 ## About the Project
-
-The Ambulance Management System is a Java Full Stack web application designed to simplify emergency ambulance services. The frontend is developed using React.js and Vite, providing a user-friendly interface for patients, drivers, and administrators. Patients can register, log in, submit emergency requests, and track their request status. Administrators can manage emergency requests and assign available ambulances and drivers, while drivers can view their assigned requests and mark them as completed.
+The Ambulance Management System Frontend is developed using React.js and Vite. It provides a user-friendly interface for patients, ambulance drivers, and administrators to interact with the ambulance management platform. The frontend communicates with the Spring Boot backend through REST APIs to display information and manage emergency requests.
 
 ## Technologies Used
-
 - React.js
 - JavaScript
 - HTML5
@@ -16,78 +14,87 @@ The Ambulance Management System is a Java Full Stack web application designed to
 - Git and GitHub
 
 ## Features
-
-- User registration and login
+- User registration and login interface
 - Patient dashboard
-- Emergency request creation
+- Emergency request submission
 - Emergency request status tracking
-- Driver dashboard
-- Admin dashboard
-- Ambulance and driver assignment
-- Responsive user interface
-- Integration with Spring Boot REST APIs
+- Driver dashboard for assigned requests
+- Admin dashboard for managing emergency requests
+- Ambulance and driver assignment interface
+- Responsive dashboard styling
+- Backend communication using Axios
+
+## Project Structure
+```text
+frontend/
+├── public/
+├── src/
+│   ├── components/
+│   ├── context/
+│   ├── pages/
+│   │   ├── Login.jsx
+│   │   ├── Register.jsx
+│   │   ├── PatientDashboard.jsx
+│   │   ├── DriverDashboard.jsx
+│   │   └── AdminDashboard.jsx
+│   ├── services/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── index.html
+├── package.json
+├── package-lock.json
+└── vite.config.js
+```
 
 ## Prerequisites
-
 - Node.js
 - npm
-- Ambulance Management System backend
+- A running instance of the Ambulance Management System backend
 
 ## Installation
-
-Clone the frontend repository:
-
-```bash
-git clone https://github.com/Aravind6082/ambulance-management-system_frontend.git
-```
-
-Navigate to the project directory:
-
-```bash
-cd ambulance-management-system_frontend
-```
+Open CMD or a terminal inside the frontend folder.
 
 Install dependencies:
 
-```bash
+```cmd
 npm install
 ```
 
-## Run the Application
-
+## How to Run
 Start the development server:
 
-```bash
+```cmd
 npm run dev
 ```
 
-Open the local URL displayed in your terminal. The default Vite address is usually:
+Open the URL displayed in the terminal. By default, Vite commonly uses:
 
-http://localhost:5173
+`http://localhost:5173`
 
-## Backend Integration
+## Backend Configuration
+Ensure the Spring Boot backend is running at:
 
-The frontend communicates with the Spring Boot backend through REST APIs. Ensure the backend is running at `http://localhost:8080` and that the frontend API configuration points to the correct backend address.
+`http://localhost:8080`
+
+If the backend URL is configured in a frontend service file, update it there when using a different server address.
 
 ## Application Workflow
-
-1. Patients register and log in.
-2. Patients create emergency ambulance requests.
-3. Administrators view requests and assign available ambulances and drivers.
-4. Drivers view assigned requests and complete them.
-5. Request status and resource availability are updated.
+1. A patient registers and logs in.
+2. The patient submits an emergency request with pickup and destination locations.
+3. The administrator views pending requests and assigns an available ambulance and driver.
+4. The driver views the assigned request and completes it.
+5. The system updates the request status and restores ambulance and driver availability.
 
 ## Future Enhancements
-
-- Real-time ambulance GPS tracking
-- Interactive maps and route optimization
-- Emergency notifications
-- Enhanced security and role-based access control
+- Live ambulance location tracking
+- Interactive maps and route visualization
+- Real-time notifications
+- Enhanced responsive design
+- Improved authentication and route protection
 
 ## Author
-
 **Aravind Reddy**
 
 ## Repository
-
 [Ambulance Management System Frontend](https://github.com/Aravind6082/ambulance-management-system_frontend)
